@@ -1,0 +1,213 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../font/Myriad\ Pro\ Regular.eot') format('eot'),
+		url('../font/MyriadPro-Regular.svg') format('svg'),
+		url('../font/MyriadPro-Regular.ttf') format('ttf'),
+		url('../font/MyriadPro-Regular.woff') format('woff'),
+		url('../font/MYRIADPRO-BOLD.OTF') format('otf');
+}
+
+
+.container {
+	background-image: url(../img/map.jpg);
+	height: 920px;
+	background-size: cover;
+}
+
+.continent {
+	display: flex;
+	flex-wrap: wrap;
+}
+.country {
+	margin: 15px;
+	height: 350px;
+}
+.country-info img {
+	width: 200px;
+	height: 100px;
+}
+.country-info {
+	display: flex;
+}
+.country-info h2 {
+	font-size: 30px;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: "Myriad Pro";
+	text-align: center;
+	margin: 10px;
+}
+.continent-info {
+	width: 620px;
+	height: 450px;
+	margin: 5px;
+}
+.continent-info h1 {
+	font-size: 38px;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: "Myriad Pro";
+	text-align: center;
+}
+
+.america {
+	background-color: rgba(0,53,97,0.75);
+}
+.europa {
+	background-color: rgba(39,2,38,0.75)
+}
+.asia {
+	background-color: rgba(62,4,6,0.75);
+}
+.africa {
+	background-color: rgba(100,95,0,0.75);
+}
+.australia {
+	background-color: rgba(97,58,11,0.75);
+}
+.southamerica {
+	background-color: rgba(60, 179, 113,0.75);
+}
+.country {
+	background-color: rgba(42,42,42,0.6);
+}
+
+.cities-info {
+	margin: 15px;
+}
+
+
+.cities-info h3 {
+	font-size: 26px;
+	color: #ffffff;
+	font-family: "Myriad Pro";
+	margin: 10px;
+}
+
+
+.cities-info img {
+	width: 90px;
+	height: 55px;
+}
+.cities-info__city1 {
+	display: flex;
+	margin: 15px;
+}
+.cities-info__city1 p {
+	font-size: 21px;
+	color: #ffffff;
+	font-family: "Myriad Pro";
+	text-align: center;
+	margin: 5px;
+}
+.cities-info__city2 {
+	display: flex;
+	margin: 15px;
+}
+.cities-info__city2 p {
+	font-size: 21px;
+	color: #ffffff;
+	font-family: "Myriad Pro";
+	text-align: center;
+	margin: 5px;
+}
+
+
+@media (max-width: 1400px) {
+	.continent-info {
+		width: 30vw;
+		height: 45vh;
+	}
+	.continent-info h1 {
+		font-size: 1.8em;
+	}
+	.country {
+		width: 25vw;
+		height: 36vh;
+	}
+	.country-info img {
+		width: 11vw;
+		height: 8vh;
+	}
+	.country-info h2 {
+		font-size: 1.3em;
+	}
+	.cities-info h3 {
+	font-size: 1.1em
+	}
+	.cities-info p {
+	font-size: 0.9em
+	}
+	.cities-info img {
+	width: 9vw;
+	height: 7vh;
+	}
+}
+
+@media (max-width: 990px) {
+	.continent-info {
+		width: 31vw;
+		height: 47vh;
+	}
+	.continent-info h1 {
+		font-size: 1.5em;
+	}
+	.country {
+		width: 26vw;
+		height: 41vh;
+	}
+	.country-info img {
+		width: 11vw;
+		height: 7vh;
+	}
+	.cities-info img {
+		width: 7vw;
+		height: 5vh;
+	}
+	.country-info h2 {
+		font-size: 1.1em;
+	}
+	.cities-info h3 {
+		font-size: 0.9em
+	}
+	.cities-info p {
+		font-size: 0.7em
+		}
+}
+
+@media (max-width: 400px) {
+	.continent-info {
+		width: 29vw;
+		height: 45vh;
+	}
+	.country {
+		width: 22vw;
+		height: 35vh;
+	}
+	.continent-info h1 {
+		font-size: 1.2em;
+	}
+	.country-info img {
+		width: 9vw;
+		height: 5vh;
+	}
+	.cities-info img {
+		width: 5vw;
+		height: 3vh;
+	}
+	.country-info h2 {
+		font-size: 0.7em;
+	}
+	.cities-info h3 {
+		font-size: 0.5em
+	}
+	.cities-info p {
+		font-size: 0.4em
+		}
+}
